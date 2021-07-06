@@ -1,0 +1,20 @@
+@import "font-face";
+@import "variables";
+@import "global";
+
+
+@import "./blocks/wrapper.scss";
+@import "./blocks/container.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/site-navigation.scss";
+@import "./blocks/main.scss";
+@import "./blocks/auto-card.scss";
+@import "./blocks/auto-nav.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/review.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/add-review-form.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/footer-navigation.scss";

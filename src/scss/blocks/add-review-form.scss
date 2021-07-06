@@ -1,0 +1,262 @@
+.add-review-form {
+  width: 698px;
+  min-height: 415px;
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 30px 35px 35px 35px;
+}
+
+.add-review-form__btn-close {
+  width: 15px;
+  height: 16px;
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+
+  &:hover {
+    background: $basic-bright;
+  }
+}
+
+.add-review-form__title {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 47px;
+  padding: 0;
+  padding-left: 211px;
+}
+
+.add-review-form__comment {
+  position: relative;
+}
+
+.add-review-form__text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #FF0000;
+  position: absolute;
+  top: -22px;
+  left: 0;
+}
+
+.add-review-form__fields-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.add-review-form__section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.add-review-form__section--first {
+  margin: 0;
+  margin-right: 27px;
+}
+
+.add-review-form__field {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.add-review-form__field--required {
+  position: relative;
+}
+
+.add-review-form__input {
+  width: 300px;
+  min-height: 50px;
+  background-color: $basic-white;
+  border: 1px solid rgba(72, 73, 77, 0.2);
+  padding: 0;
+  padding-left: 25px;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  color: $basic-text-color;
+
+  &:active {
+    outline: none;
+    border: 1px solid #FF0000;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid #FF0000;
+  }
+}
+
+.add-review-form__input--required {
+  background-image: url("../../img/input-star.svg");
+  background-repeat: no-repeat;
+  background-size: 6px 6px;
+  background-position: 9px 12px;
+}
+
+.add-review-form__input::placeholder {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  color: $basic-text-color;
+}
+
+.add-review-form__btn-submit {
+  width: 190px;
+  min-height: 52px;
+  margin: 0 auto;
+  background-color: $basic-bright;
+  color: $basic-white;
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19.07px;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  letter-spacing: 0.12em;
+
+  &:hover {
+    background-color: $btn-hover-color;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.add-review-form__rating-stars {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+  padding-top: 11px;
+}
+
+.add-review-form__rating-text {
+  font-weight: 600;
+  font-size: 15px;
+  color: $basic-black;
+  margin: 0;
+  margin-right: 14px;
+  padding: 0;
+}
+
+.add-review-form__rating-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.add-review-form__rating-input:checked ~ .add-review-form__rating-label::after {
+  color: $basic-bright;
+}
+
+.add-review-form__rating-input:checked + .add-review-form__rating-label::after {
+  color: $basic-bright;
+}
+
+.add-review-form__rating-input:focus-visible + .add-review-form__rating-label::after {
+  outline: solid;
+}
+
+.add-review-form__rating-input:hover ~ .add-review-form__rating-label::after {
+  color: $basic-bright;
+}
+
+.add-review-form__rating-input:hover + .add-review-form__rating-label::after {
+  color: $basic-bright;
+}
+
+.add-review-form__rating-label {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+.add-review-form__rating-label:last-child {
+  padding-left: 0;
+}
+
+.add-review-form__rating-label::after {
+  content: '★';
+  display: block;
+  font-size: 27px;
+  line-height: 25px;
+  color:rgba(189, 190, 194, 0.7);
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.add-review-form__textarea {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 14px;
+  color: $basic-text-color;
+  width: 300px;
+  height: 118px;
+  background-color: $basic-white;
+  border: 1px solid rgba(72, 73, 77, 0.2);
+  resize: none;
+  padding: 0;
+  padding-left: 25px;
+  padding-top: 15px;
+
+  &:active {
+    outline: none;
+    border: 1px solid #FF0000;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid #FF0000;
+  }
+
+  &::-webkit-input-placeholder {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    color: $basic-text-color;
+  }
+
+  &:-ms-input-placeholder {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    color: $basic-text-color;
+  }
+
+  &::-ms-input-placeholder {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    color: $basic-text-color;
+  }
+
+  &::placeholder {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    color: $basic-text-color;
+  }
+}
